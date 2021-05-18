@@ -45,3 +45,8 @@ kafka-server-start.bat ../../config/server.properties
 8. 카프카가 비정상일 때 
   sudo lsof -i :2181 한뒤  
   kill -9 pid 하고 다시 띄워준다
+
+## Kafka Topic 
+
+1.1) Topic 생성
+  - /usr/local/kafka/bin/kafka-topics.sh --bootstrap-server http://localhost:9092 --topic topic_example --create --partitions 1 --replication-factor 1
